@@ -68,14 +68,24 @@
             white-space: nowrap;
             vertical-align: top;
             width: 1%;
+            padding-right: 20px;
         }
-        .content-table .description {
+        .content-table .description .item-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .content-table .description .item-text {
             font-size: 1em;
+            color: #555;
         }
-        .content-table .description strong {
+        .content-table .description .item-takeaway {
+            font-size: 0.9em;
             color: #D2691E;
-            display: block;
-            margin-top: 8px;
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px dashed #FFDAB9;
         }
         .footer {
             text-align: center;
@@ -101,30 +111,30 @@
                 <tr>
                     <td class="code">S-1 / F-1</td>
                     <td class="description">
-                        <strong>招股说明书</strong><br>
-                        公司上市时向公众发行的“第一份简历”，也是最全面的文件。内容涵盖公司历史、业务模式、财务数据、募资用途、风险因素和管理层介绍。F-1专用于外国公司（如中概股）。
-                        <strong>核心看点：</strong>风险因素、管理层讨论与分析(MD&A)、主要股东。
+                        <div class="item-title">招股说明书</div>
+                        <div class="item-text">公司上市时向公众发行的“第一份简历”，也是最全面的文件。内容涵盖公司历史、业务模式、财务数据、募资用途、风险因素和管理层介绍。F-1专用于外国公司（如中概股）。</div>
+                        <div class="item-takeaway"><strong>核心看点：</strong>风险因素、管理层讨论与分析(MD&A)、主要股东。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">DRS</td>
                     <td class="description">
-                        <strong>招股说明书草稿</strong><br>
-                        “新兴成长型公司”在正式公开IPO信息前，与SEC之间秘密沟通的招股书草稿。这使公司能在不暴露商业机密的情况下完成监管审核。
+                        <div class="item-title">招股说明书草稿</div>
+                        <div class="item-text">“新兴成长型公司”在正式公开IPO信息前，与SEC之间秘密沟通的招股书草稿。这使公司能在不暴露商业机密的情况下完成监管审核。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">8-A12B</td>
                     <td class="description">
-                        <strong>上市交易注册</strong><br>
-                        功能非常专一的“挂牌文件”。它本身不用于融资，而是为了将公司的证券（如普通股）正式注册到交易所（如纳斯达克），使其能够被合法地公开交易。
+                        <div class="item-title">上市交易注册</div>
+                        <div class="item-text">功能非常专一的“挂牌文件”。它本身不用于融资，而是为了将公司的证券（如普通股）正式注册到交易所（如纳斯达克），使其能够被合法地公开交易。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">F-6EF</td>
                     <td class="description">
-                        <strong>美国存托凭证(ADR)注册</strong><br>
-                        用于注册外国公司在美国发行的存托凭证（ADR）。ADR是美国银行购买外国公司股票后，在美国市场发行的代表这些股票所有权的凭证。`EF`后缀代表“立即生效”。看到它就意味着一家外国公司的股票将能以ADR形式在美国交易了。
+                        <div class="item-title">美国存托凭证(ADR)注册</div>
+                        <div class="item-text">用于注册外国公司在美国发行的存托凭证（ADR）。ADR是美国银行购买外国公司股票后，在美国市场发行的代表这些股票所有权的凭证。`EF`后缀代表“立即生效”。看到它就意味着一家外国公司的股票将能以ADR形式在美国交易了。</div>
                     </td>
                 </tr>
             </table>
@@ -136,31 +146,31 @@
                 <tr>
                     <td class="code">10-K / 20-F</td>
                     <td class="description">
-                        <strong>年报</strong><br>
-                        公司全年度的“体检报告”，包含<strong>经审计的</strong>财务报表和详尽的业务回顾。20-F是外国公司使用的版本，披露标准有时略有不同。
-                        <strong>核心看点：</strong>管理层讨论与分析(MD&A)、经审计的财务三表、业务风险更新。
+                        <div class="item-title">年报</div>
+                        <div class="item-text">公司全年度的“体检报告”，包含<strong>经审计的</strong>财务报表和详尽的业务回顾。20-F是外国公司使用的版本，披露标准有时略有不同。</div>
+                        <div class="item-takeaway"><strong>核心看点：</strong>管理层讨论与分析(MD&A)、经审计的财务三表、业务风险更新。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">10-Q</td>
                     <td class="description">
-                        <strong>季报</strong><br>
-                        公司的季度“进度报告”，包含<strong>未经审计的</strong>财务报表。一年提交三次，让投资者能持续跟踪公司表现。
+                        <div class="item-title">季报</div>
+                        <div class="item-text">公司的季度“进度报告”，包含<strong>未经审计的</strong>财务报表。一年提交三次，让投资者能持续跟踪公司表现。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">8-K / 6-K</td>
                     <td class="description">
-                        <strong>重大事件报告</strong><br>
-                        最及时的“突发新闻”公告，必须在重大事件发生后4个工作日内提交。事件包括但不限于：发布财报、变更CEO/CFO、宣布并购、签署重大合同、收到退市警告、申请破产等。6-K是外国公司使用的版本，频率和内容取决于其本国规定。
+                        <div class="item-title">重大事件报告</div>
+                        <div class="item-text">最及时的“突发新闻”公告，必须在重大事件发生后4个工作日内提交。事件包括但不限于：发布财报、变更CEO/CFO、宣布并购、签署重大合同、收到退市警告、申请破产等。6-K是外国公司使用的版本，频率和内容取决于其本国规定。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">DEF 14A</td>
                     <td class="description">
-                        <strong>代理投票委托书</strong><br>
-                        年度股东大会的“会议手册”，用于向股东征集投票权。
-                        <strong>核心看点：</strong>高管薪酬的详细构成（投资者判断管理层与股东利益是否一致的关键）、董事会成员背景、需要股东投票的各项提案。
+                        <div class="item-title">代理投票委托书</div>
+                        <div class="item-text">年度股东大会的“会议手册”，用于向股东征集投票权。</div>
+                        <div class="item-takeaway"><strong>核心看点：</strong>高管薪酬的详细构成（投资者判断管理层与股东利益是否一致的关键）、董事会成员背景、需要股东投票的各项提案。</div>
                     </td>
                 </tr>
             </table>
@@ -172,29 +182,29 @@
                 <tr>
                     <td class="code">S-3 / F-3</td>
                     <td class="description">
-                        <strong>简式注册声明</strong><br>
-                        信誉良好的已上市公司专用的“快速融资通道”。由于公司已持续披露信息，该表格内容得以简化，常用于“货架注册”，即一次性注册大量证券额度，未来按需快速发行。
+                        <div class="item-title">简式注册声明</div>
+                        <div class="item-text">信誉良好的已上市公司专用的“快速融资通道”。由于公司已持续披露信息，该表格内容得以简化，常用于“货架注册”，即一次性注册大量证券额度，未来按需快速发行。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">F-3ASR</td>
                     <td class="description">
-                        <strong>自动生效的货架注册</strong><br>
-                        “明星”外国公司（即“知名成熟发行人”，WKSI）的特权。它们提交的货架注册可以“自动生效”，无需SEC审核，使其能抓住稍纵即逝的市场窗口进行闪电式融资。
+                        <div class="item-title">自动生效的货架注册</div>
+                        <div class="item-text">“明星”外国公司（即“知名成熟发行人”，WKSI）的特权。它们提交的货架注册可以“自动生效”，无需SEC审核，使其能抓住稍纵即逝的市场窗口进行闪电式融资。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">424B3/B4/B5</td>
                     <td class="description">
-                        <strong>招股书补充文件</strong><br>
-                        货架注册发行时的“最终执行文件”。在确定了发行细节后提交。其中`424B4`最常见，专门用于公布包括<strong>最终发行价</strong>、发行数量和承销商等关键信息。看到它，就代表增发价格已定。
+                        <div class="item-title">招股书补充文件</div>
+                        <div class="item-text">货架注册发行时的“最终执行文件”。在确定了发行细节后提交。其中`424B4`最常见，专门用于公布包括<strong>最终发行价</strong>、发行数量和承销商等关键信息。看到它，就代表增发价格已定。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">S-8</td>
                     <td class="description">
-                        <strong>员工股权激励计划注册</strong><br>
-                        公司专门为员工的股权激励计划（如股票期权、限制性股票单位RSU）注册股份时使用的文件。
+                        <div class="item-title">员工股权激励计划注册</div>
+                        <div class="item-text">公司专门为员工的股权激励计划（如股票期权、限制性股票单位RSU）注册股份时使用的文件。</div>
                     </td>
                 </tr>
             </table>
@@ -206,36 +216,36 @@
                 <tr>
                     <td class="code">Form 3, 4, 5</td>
                     <td class="description">
-                        <strong>内部人士持股变动系列</strong><br>
-                        <strong>Form 4</strong>是含金量最高的一个，要求公司内部人士（高管、董事等）在<strong>买卖自家股票后的2个工作日内</strong>披露。这是追踪管理层对公司信心变化的最直接、最及时的指标。
+                        <div class="item-title">内部人士持股变动系列</div>
+                        <div class="item-text"><strong>Form 4</strong>是含金量最高的一个，要求公司内部人士（高管、董事等）在<strong>买卖自家股票后的2个工作日内</strong>披露。这是追踪管理层对公司信心变化的最直接、最及时的指标。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">Schedule 13D</td>
                     <td class="description">
-                        <strong>积极投资者持股披露</strong><br>
-                        当任何实体（个人或机构）持股超过5%，并且<strong>怀有影响或控制公司的意图</strong>时提交。这通常是“野蛮人敲门”或维权投资者入场的信号，可能预示着公司将发生重大变革。
+                        <div class="item-title">积极投资者持股披露</div>
+                        <div class="item-text">当任何实体（个人或机构）持股超过5%，并且<strong>怀有影响或控制公司的意图</strong>时提交。这通常是“野蛮人敲门”或维权投资者入场的信号，可能预示着公司将发生重大变革。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">Schedule 13G</td>
                     <td class="description">
-                        <strong>被动投资者持股披露</strong><br>
-                        与13D相对，同样是持股超过5%，但持有人声明<strong>没有影响公司的意图</strong>，仅为被动财务投资（如大型指数基金）。
+                        <div class="item-title">被动投资者持股披露</div>
+                        <div class="item-text">与13D相对，同样是持股超过5%，但持有人声明<strong>没有影响公司的意图</strong>，仅为被动财务投资（如大型指数基金）。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">Form 13F</td>
                     <td class="description">
-                        <strong>大型投资机构季度持仓</strong><br>
-                        管理超1亿美元资产的机构（如伯克希尔、桥水基金）在每季度结束后45天内必须披露其美股多头持仓。是“抄华尔街大佬作业”的重要参考。
+                        <div class="item-title">大型投资机构季度持仓</div>
+                        <div class="item-text">管理超1亿美元资产的机构（如伯克希尔、桥水基金）在每季度结束后45天内必须披露其美股多头持仓。是“抄华尔街大佬作业”的重要参考。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">Form 144</td>
                     <td class="description">
-                        <strong>限制股/内部股出售意向</strong><br>
-                        内部人士或早期投资者（持有未注册的“限制性股票”）计划在公开市场出售股票时，需提前提交的“卖出预告”。
+                        <div class="item-title">限制股/内部股出售意向</div>
+                        <div class="item-text">内部人士或早期投资者（持有未注册的“限制性股票”）计划在公开市场出售股票时，需提前提交的“卖出预告”。</div>
                     </td>
                 </tr>
             </table>
@@ -247,29 +257,29 @@
                 <tr>
                     <td class="code">S-4 / F-4</td>
                     <td class="description">
-                        <strong>并购注册声明</strong><br>
-                        当并购交易中包含发行新股作为支付对价时使用。它相当于一份为合并后新公司准备的招股书，向双方股东详细说明交易的利弊。
+                        <div class="item-title">并购注册声明</div>
+                        <div class="item-text">当并购交易中包含发行新股作为支付对价时使用。它相当于一份为合并后新公司准备的招股书，向双方股东详细说明交易的利弊。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">PREM14A / DEFM14A</td>
                     <td class="description">
-                        <strong>并购相关的委托投票书</strong><br>
-                        专门用于需要股东投票批准并购交易时的委托书，`M`即代表Merger（并购）。
+                        <div class="item-title">并购相关的委托投票书</div>
+                        <div class="item-text">专门用于需要股东投票批准并购交易时的委托书，`M`即代表Merger（并购）。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">PRE-14C / DEF-14C</td>
                     <td class="description">
-                        <strong>信息声明</strong><br>
-                        当公司有重大行动，但因为有控股股东存在，投票结果已成定局，无需征求小股东意见时，用于“通知”小股东的文件。表明“事情已经定了，只是告诉你们一声”。
+                        <div class="item-title">信息声明</div>
+                        <div class="item-text">当公司有重大行动，但因为有控股股东存在，投票结果已成定局，无需征求小股东意见时，用于“通知”小股东的文件。表明“事情已经定了，只是告诉你们一声”。</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="code">8-K (关键条款)</td>
                     <td class="description">
-                        <strong>高风险信号</strong><br>
-                        除了常规事件，8-K还用于披露高风险信号，例如：`Item 1.03` (申请破产), `Item 4.01` (更换会计师事务所，需关注是否有“意见分歧”), `Item 4.02` (宣布前期财报不再可靠，即“财务重述”，严重负面信号)。
+                        <div class="item-title">高风险信号</div>
+                        <div class="item-text">除了常规事件，8-K还用于披露高风险信号，例如：`Item 1.03` (申请破产), `Item 4.01` (更换会计师事务所，需关注是否有“意见分歧”), `Item 4.02` (宣布前期财报不再可靠，即“财务重述”，严重负面信号)。</div>
                     </td>
                 </tr>
             </table>
@@ -278,7 +288,7 @@
     </div>
 
     <div class="footer">
-        <p>信息更新于：2025年8月</p>
+        <p>信息更新于：2025年8月22日</p>
     </div>
 
 </body>
